@@ -1,0 +1,36 @@
+ <div id="contenido-login">
+        <div id="contenido-login-question">
+          <div id="contenido-login-question-sesion">
+            <h3>¿Ya tienes una cuenta?</h3>
+            <p>Inicia sesion</p>
+            <button id="btn-sesion">Iniciar Sesion</button>
+          </div>
+          <div id="contenido-login-question-register">
+            <h3>¿Aun no tienes una cuenta?</h3>
+            <p>Registrate para que puedas iniciar sesion</p>
+            <button id="btn-register">Registrarse</button>
+          </div>
+        </div>
+        <div id="contenido-login-register">
+          <form action="/session" id="form-login" method="POST">
+            <h2 class="title">Login</h2>
+            <label for="user">Correo:</label>
+              <input type="text" name="correo_user" placeholder="Ingrese el usuario" id="user"/>
+            <label for="password">Contraseña:</label>
+              <input type="password" name="password_user" placeholder="Ingrese la contraseña" id="password"/>
+            <button>Ingresar</button>
+          </form>
+          <form action="/register" id="form-register" method="POST">
+            <h2 class="title">Registrarse</h2>
+            <label for="name">Nombre:</label>
+            <input type="text" name="nombre_user" id="name" placeholder="Ingrese el nombre"/>
+            <label for="lastname">Apellido:</label>
+            <input type="text" name="apellido_user" id="lastname" placeholder="Ingrese el apellido" />
+            <label for="user">Correo:</label>
+              <input type="text" name="correo_user" placeholder="Ingrese el usuario" id="user" />
+            <label for="password">Contraseña:</label>
+                <input type="password" name="password_user" placeholder="Ingrese la contraseña" id="password" />
+            <button>Registrarse</button>
+          </form>
+        </div>
+      </div>

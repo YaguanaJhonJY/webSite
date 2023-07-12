@@ -1,0 +1,14 @@
+<div id="form-add-equipo">
+    <form action="/equipos/edit/{{equipo.id_equipo}}" method="post" >
+    <fieldset>
+        <title></title>
+        <label for="" >Nombre</label>
+        <input type="text" value="{{equipo.nombre_equipo}}" name="nombre_equipo" placeholder="Inserte el nombre" required maxlength="25">
+        <label for="">Estadio</label>
+        <input type="text" value="{{equipo.estadio_equipo}}" name="estadio_equipo" placeholder="Inserte el estadio" required maxlength="25">
+        <label for="">Ubicación</label>
+        <input type="text" value="{{equipo.ubicacion_equipo}}" name="ubicacion_equipo" placeholder="Inserte la ubicación" required maxlength="25">
+        <button>Guardar</button>
+    </fieldset>
+</form>
+</div>

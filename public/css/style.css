@@ -1,0 +1,470 @@
+*{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/*--login--*/
+
+
+#contenido-login {
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+    height: 350px;
+    padding: 100px;
+  }
+  
+  #contenido-login-question {
+    width: 100%;
+    padding: 10px 20px;
+    margin: auto;
+    display: flex;
+    box-shadow: 0 5px 10px rgba(22, 1, 2, 0.5);
+    justify-content: center;
+    background-color: #9d9d9d;
+    height: 100%;
+  }
+  
+  #contenido-login-question-sesion {
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+  
+  #contenido-login-question-register {
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+  
+  #contenido-login-question button {
+    color: #fff;
+    background: linear-gradient(to right, #000000, #333);
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 20px;
+    margin: auto;
+  }
+  
+  #contenido-login-register {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 380px;
+    position: relative;
+    height: 100%;
+    top: -360px;
+    left: 20px;
+    transition: left 500ms cubic-bezier(0.175,0.885,0.320,1.275);
+  }
+  
+  #contenido-login-register form {
+    background-color: #fffefe;
+    text-align: center;
+    padding: 20px 25px;
+    box-shadow: 0 5px 10px rgba(22, 1, 2, 0.5);
+    position: absolute;
+    border-radius: 10px;
+    width: 90%;
+  }
+  #contenido-login-register form title {
+    color: #000000;
+    font-size: 35px;
+    font-weight: 800;
+    margin-bottom: 30px;
+  }
+  
+  #contenido-login-register form input {
+    outline: none;
+    border: none;
+    color: #7881d6;
+    border-bottom: solid 1px #000000;
+    width: 100%;
+    padding: 5px;
+  }
+  
+  #contenido-login-register form button {
+    color: #fff;
+    background: linear-gradient(to right, #000000, #333);
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  
+  #form-login{
+    opacity: 1;
+    display: block;
+  }
+  
+  #form-register{
+    display: none;
+  }
+  
+/*--header--*/
+header {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+  }
+  header img {
+    position: relative;
+    object-fit: cover;
+    opacity: 0.5;
+    z-index: -1;
+    background-color: #7881d6;
+  }
+
+/*--navbar--*/
+#menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    }
+    #menu li {
+        display: inline-block;
+        margin-right: 10px;
+    }
+    #menu li a {
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        color: #fffefe;
+    }
+    #menu li a:hover {
+        background-color: #ccc;
+    }
+    #menu li:hover ul {
+        display: block;
+    }
+    #menu ul {
+        display: none;
+        position: absolute;
+        background-color: #000000;
+        padding: 0;
+    }
+    #menu ul li {
+        display: block;
+    }
+
+    /*formulario para añadir equipo*/
+   #form-add-equipo{
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+
+    #form-add-equipo form{
+        width: 100%;
+        max-width: 600px;
+        margin: 50px auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 5px 10px rgba(22, 1, 2, 0.5);
+        border-radius: 10px;
+    } 
+    #form-add-equipo form fieldset{
+        border: none;
+        margin: 20px;
+    }
+    
+    #form-add-equipo form input {
+        outline: none;
+        border: none;
+        border-bottom: solid 1px #000000;
+        width: 100%;
+        padding: 5px;
+        width: 90%;
+        height: 30px;
+        margin: .5rem
+    }
+    
+    #form-add-equipo form button {
+        color: #fff;
+        background: linear-gradient(to right, #000000, #333);
+        border: none;
+        padding: 10px 15px;
+        cursor: pointer;
+        font-size: 20px;
+        margin-top: 20px;
+        border-radius: 10px;
+    }
+
+    /*lista de equipos*/
+
+    #list-equipos{
+        align-items: center;
+        margin: 10px auto;
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #list-equipos section{
+        text-align: center;
+        padding: 20px 15px;
+        border: solid 1px #333;
+        border-radius: 5px;
+        margin: 10px;
+        width: 200px;
+        height: 150px;
+        box-shadow: 0 5px 10px rgba(22, 1, 2, 0.5);
+    }
+
+    #list-equipos section h1{
+        margin: 5px;
+        padding: 5px;
+    }
+
+    #list-equipos section p{
+        margin: 10px;
+        padding: 5px;
+    }
+
+    #list-equipos section a{
+        text-decoration: none;
+        border: solid 1px #333;
+        border-radius: 5px;
+        box-shadow: 0 5px 10px rgba(22, 1, 2, 0.5);
+        padding: 10px 15px;
+        margin: 5px;
+    }
+
+    #list-equipos section #edit-list{
+        background-color: rgb(10, 8, 125);
+        color: #fff;
+    }
+    #list-equipos section #delete-list{
+        background-color: rgb(117, 8, 8);
+        color: #fff;
+    }
+
+/*--main--*/
+
+#contenido {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    min-height: 500px;
+  }
+  
+  #contenido main {
+    width: 65%;
+  }
+  #contenido main article {
+    padding: 10px;
+  }
+  #contenido main article h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  #contenido main article img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  #contenido main article p {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: justify;
+  }
+  #contenido main table {
+    width: 100%;
+    border-collapse: collapse;
+    padding: 20px;
+  }
+  #contenido main thead {
+    background-color: #3445d6;
+  }
+  #contenido main thead th {
+    padding: 10px;
+    text-align: left;
+    font-weight: bold;
+  }
+  #contenido main tbody td {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  #contenido main tbody tr:hover {
+    background-color: #a1a1a1;
+  }
+  
+  #contenido main .siguenos {
+    margin-top: 20px;
+    text-align: center;
+  }
+  #contenido main .siguenos a {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  #contenido main .siguenos img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  #contenido aside {
+    width: 35%;
+    margin: 0;
+    padding: 0.3rem;
+  }
+  
+  #contenido  aside #modal {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 380px;
+    position: relative;
+    height: 100%;
+  }
+  
+  #contenido aside #modal form{
+    background-color: #b3acac;
+    text-align: center;
+    padding: 20px 25px;
+    box-shadow: 0 5px 10px rgba(22, 1, 2, 0.5);
+    position: absolute;
+    border-radius: 10px;
+    width: 90%;
+  }
+  #contenido  aside #modal form title {
+    color: #000000;
+    font-size: 35px;
+    font-weight: 800;
+    margin-bottom: 30px;
+  }
+  
+  #contenido aside #modal form input {
+    outline: none;
+    border: none;
+    color: #7881d6;
+    border-bottom: solid 1px #000000;
+    width: 100%;
+    padding: 5px;
+  }
+  
+  #contenido aside #modal form button {
+    color: #fff;
+    background: linear-gradient(to right, #000000, #333);
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  
+  
+  #form-register{
+    display: none;
+  }
+  
+  #contenido aside h2 {
+    font-size: 24px;
+    margin: 20px;
+  }
+  #contenido aside #recomendados {
+    background-color: #eee;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    margin: 2rem 0.5rem;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  }
+  #contenido aside #recomendados section {
+    display: flex;
+    background-color: #fff;
+    margin: 1rem;
+    padding: 0.3rem;
+    border-radius: 1rem;
+  }
+  #contenido aside #recomendados section h3 {
+    font-size: 18px;
+    margin: 0;
+  }
+  #contenido aside #recomendados section img {
+    width: 30%;
+    height: 30%;
+    border-radius: 10px;
+    border: #333;
+    margin: 5px;
+  }
+  #contenido aside #recomendados section p {
+    font-size: 15px;
+    margin: 0;
+    text-align: justify;
+  }
+  #contenido aside #recomendados section:hover {
+    background-color: #e6d053;
+  }
+  #contenido aside #escribenos {
+    background-color: #eee;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    box-shadow: 0 5px 10px rgba(22, 1, 2, 0.5);
+  }
+  #contenido aside #escribenos form {
+    background-color: #fff;
+    border-radius: 0.5rem;
+    margin: 1rem;
+    padding: 0.3rem;
+  }
+  #contenido aside #escribenos form fieldset {
+    border: none;
+  }
+  #contenido aside #escribenos form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  #contenido aside #escribenos form input[type="text"],
+  #contenido aside #escribenos form input[type="email"],
+  #contenido aside #escribenos form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  #contenido aside #escribenos form input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #4caf50;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  #contenido aside #escribenos form input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+
+/*--footer--*/
+footer {
+  background-color: #333;
+}
+footer a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  border: 2px solid #fff;
+  border-radius: 5rem;
+  margin: 10px;
+  padding: 2px 10px;
+  text-align: center;
+}
+footer a:hover {
+  background-color: #5e07ff;
+}
+footer section {
+  text-align: center;
+}
+

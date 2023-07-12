@@ -1,0 +1,17 @@
+<div id="list-equipos">
+    {{#each equipos}}
+        <section>
+            <h1>{{nombre_equipo}}</h1>
+            <p>{{estadio_equipo}}</p>
+            <p>{{ubicacion_equipo}}</p>
+            <a href="/equipos/edit/{{id_equipo}}" id="edit-list" >Editar</a>
+            <a href="/equipos/delete/{{id_equipo}}" id="delete-list">Eliminar</a>
+        </section>
+    {{else}}
+        <section>
+            <h1>No hay equipos para mostrar</h1>
+            <a href="/equipos/add">Ingresa uno</a>
+        </section>
+    {{/each}}
+    
+</div>
